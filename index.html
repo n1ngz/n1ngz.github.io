@@ -25,6 +25,19 @@ p.wustllogpad
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
+a.anchor{
+    display: block;
+    content ="";
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+
+div.sfix
+{
+  content: " "; 
+}
 </style>
 
 <head>
@@ -96,15 +109,15 @@ p.wustllogpad
 
 
   <!-- contact and picture -->
-  <div class="w3-row w3-container">
-    <div class="w3-col s2 w3-container "> </div>
-    <div class="w3-col s8 w3-light-grey w3-container ">
-
+  <div class="w3-row w3-center w3-container">
+    <div class="w3-col s2 w3-container sfix"> <br></div>
+    <div class="w3-col s8 w3-light-grey w3-container w3-center">
       <table cellspacing="20">
         <tr>
             <td><img src="nz-1-background-3.jpg" alt="Ning's picture" height="216"></td>
             <td>
-              <div class="w3-hide-small"> <h3>Ning Zhang</h3> 
+              <div align="left">
+                <div class="w3-hide-small"> <h3>Ning Zhang</h3> 
                 <h6>
                 <p> Assistant Professor (Starting Fall 2018)
                 <br><a href="https://cse.wustl.edu/Pages/default.aspx" style="text-decoration:none" target="_blank" class="w3-hover-text-green">Department of Computer Science and Engineering</a>
@@ -115,12 +128,13 @@ p.wustllogpad
                 <br>Phone: (xxx)xxx-xxxx -->
                 </p>
                 </h6>
+                </div>
               </div>
           </td>
         </tr>
       </table>
     </div>
-    <div class="w3-col s2 w3-container"> </div>
+    <div class="w3-col s2 w3-container sfix"> <br></div>
     </div> 
 
   <!-- Research Interest -->
@@ -153,8 +167,8 @@ p.wustllogpad
   </div>
 
 
-  <div class="w3-row-padding" id="studentAd">
-    <br><br>
+  <a class="anchor" id="studentAd"></a>
+  <div class="w3-row-padding">
     <div class ='w3-center w3-padding-32'>
       <span class="w3-xlarge w3-center w3-bottombar w3-border-dark-grey w3-padding-16">Student Recruiting</span>
     </div>
@@ -174,7 +188,6 @@ p.wustllogpad
 
   <!-- Contact -->
   <div class="w3-row-padding" id="bio">
-
     <div class ='w3-center w3-padding-32'>
       <span class="w3-xlarge w3-center w3-bottombar w3-border-dark-grey w3-padding-16">Who am I</span>
     </div>
@@ -203,8 +216,8 @@ p.wustllogpad
 
 
 
-  <div class="" id="teaching">
-    <br><br>
+  <a class="anchor" id="teaching"></a>
+  <div class="">
     <div class ='w3-center w3-padding-32'>
       <span class="w3-xlarge w3-center w3-bottombar w3-border-dark-grey w3-padding-16">Teaching</span>
     </div>
@@ -217,8 +230,9 @@ p.wustllogpad
   </div>
 
 
-  <div class="" id="publication">
-    <br><br>
+
+  <a class="anchor" id="publication"></a>
+  <div class="" id="">
     <div class ='w3-center w3-padding-32'>
       <span class="w3-xlarge w3-center w3-bottombar w3-border-dark-grey w3-padding-16">Publication</span>
     </div>
@@ -323,8 +337,8 @@ p.wustllogpad
   </div>
 
 
-
-    <div class="" id="service">
+    <a class="anchor" id="service"></a>
+    <div class="" id="">
     <br><br>
     <div class ='w3-center w3-padding-32'>
       <span class="w3-xlarge w3-center w3-bottombar w3-border-dark-grey w3-padding-16">Service</span>
