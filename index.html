@@ -1,1 +1,449 @@
-Hello Penguins!
+<!DOCTYPE html>
+<html>
+<title>Ning Zhang - WashU</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+p.pmargin
+{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+p.wustllogpad
+{
+  padding-left: 6px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+</style>
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121588664-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121588664-1');
+</script>
+</head>
+
+<body>
+
+<!-- Links (sit on top) -->
+<!-- Navbar -->
+<div class="w3-top">
+
+  <div class="w3-padding w3-large w3-washu-red">
+    <p class="wustllogpad">
+      <img src="WUSTL-logo.png" alt="WUSTL">
+    </p>
+  </div>
+
+  
+
+  <div class="w3-row w3-large w3-light-grey">
+    
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NING ZHANG</a>
+    <a href="#service"    class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium w3-right">SERVICES</a>
+    <a href="#studentAd"    class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium w3-right">STUDENTS</a>
+    <!-- <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">SOFTWARE</a> -->
+    <a href="#teaching" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">TEACHING</a>
+    <a href="#publication" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">PUBLICATION</a>
+    <!-- <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">RESEARCH</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right">NEWS</a> -->
+    
+<!-- 
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div> -->
+    
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="#publication" class="w3-bar-item w3-button w3-padding-large">Publication</a>
+    <a href="#teaching" class="w3-bar-item w3-button w3-padding-large">Teaching</a>
+    <a href="#studentAd" class="w3-bar-item w3-button w3-padding-large">Students</a>
+    <a href="#service" class="w3-bar-item w3-button w3-padding-large">Services</a>
+  </div>
+
+
+</div>
+
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:120px;margin-bottom:80px">
+
+
+  <!-- contact and picture -->
+  <div class="w3-row w3-container">
+    <div class="w3-col s2 w3-container "> </div>
+    <div class="w3-col s8 w3-light-grey w3-container ">
+
+      <table cellspacing="20">
+        <tr>
+            <td><img src="nz-1-background-3.jpg" alt="Ning's picture" height="216"></td>
+            <td>
+              <div class="w3-hide-small"> <h3>Ning Zhang</h3> 
+                <h6>
+                <p> Assistant Professor (Starting Fall 2018)
+                <br><a href="https://cse.wustl.edu/Pages/default.aspx" style="text-decoration:none" target="_blank" class="w3-hover-text-green">Department of Computer Science and Engineering</a>
+                <br><a href="https://wustl.edu/" style="text-decoration:none" target="_blank" class="w3-hover-text-green">Washington University in St. Louis</a>
+                <br><a href="https://wustl.edu/" style="text-decoration:none" target="_blank" class="w3-hover-text-green"></a>
+                <br>Email: ning.zhang.washu@gmail.com
+<!--                 <br>Room: xxx Jolley Hall
+                <br>Phone: (xxx)xxx-xxxx -->
+                </p>
+                </h6>
+              </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="w3-col s2 w3-container"> </div>
+    </div> 
+
+  <!-- Research Interest -->
+  <div class="w3-row-padding" id="researchInterest">
+
+    <div class="w3-center w3-padding-32">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Research Interest</span>
+    </div>
+    <!-- 
+      <div class = w3-container>
+      <p><b>System Security:</b>  Secure execution in embedded and Cloud environment; Side-channel attack and prevention; Memory forensics; Secure computation outsourcing <br>
+      <b>Software Security:</b> Automatic vulnerability discovery and exploit generation; Cyber Reasoning System; Reverse engineering; Rootkit; Malware classification <br>
+      <b>Cyber-physical System and IoT Security:</b>  Security and privacy in IoT; Industrial control system security; User authentication; Cognitive radio network security <br> </p> </div>
+    -->
+    <div class="w3-third"><div class="w3-card-4"><div class="w3-container">
+          <h4>Architecture Security</h4>
+          <p> Secure execution environment, side-channel analysis, memory forensics</p>
+    </div></div></div>
+
+    <div class="w3-third"><div class="w3-card-4"><div class="w3-container">
+          <h4>Software Security</h4>
+          <p>cyber reasoning system, vulnerability discovery, reverse engineering, malware analysis</p>
+    </div></div></div>
+
+    <div class="w3-third "><div class="w3-card-4"><div class="w3-container">
+          <h4>Cyber-physical Security</h4>
+          <p>Security and privacy in IoT and industrial control system </p>
+    </div></div></div>
+
+  </div>
+
+
+  <div class="w3-row-padding" id="studentAd">
+    <br><br>
+    <div class ='w3-center w3-padding-32'>
+      <span class="w3-xlarge w3-center w3-bottombar w3-border-dark-grey w3-padding-16">Student Recruiting</span>
+    </div>
+
+    <h6>
+      <p class="pmargin">
+        I am looking for 
+        <!-- <a href='students.html' style="text-decoration:none" target="_blank" class="w3-hover-text-green">students</a> -->
+        student 
+        who are passionate about making a difference in computer security. 
+      </p>
+    </h6>
+
+  </div>
+
+
+
+  <!-- Contact -->
+  <div class="w3-row-padding" id="bio">
+
+    <div class ='w3-center w3-padding-32'>
+      <span class="w3-xlarge w3-center w3-bottombar w3-border-dark-grey w3-padding-16">Who am I</span>
+    </div>
+
+    <!-- <div class="w3-container w-padding-64"> -->
+    <h6>
+    <p class="pmargin">
+      Dr. Ning Zhang joined the department of computer science and engineering at  Washington University in St. Louis in Fall 2018. He was previously a principal cyber engineer/researcher and technical lead at the Cyber Security Innovations of Raytheon. 
+      <!-- He was also an Adjunct Assistant Professor at the Department of Computer Science of Virginia Polytechnic Institute and State University.  -->
+    </p>
+
+    <p class="pmargin">
+      Ning's research focus is system security, which lies at the intersection of security, embedded system, computer architecture and software. He has worked to protect cyber-physical military systems and critical infrastructures at Raytheon since 2007. 
+    </p>
+
+    
+    <p class="pmargin">
+      Ning received his Ph.D. degree from Virginia Polytechnic Institute and State University in 2016, under the supervision of Dr. Wenjing Lou. Ning received M.S. in Computer Science and B.S. in Computer Science, Economics and Mathematics from the University of Massachusetts - Amherst.
+    </p>
+    </h6>
+  <!-- </div> -->
+
+  </div>
+
+
+
+
+
+  <div class="" id="teaching">
+    <br><br>
+    <div class ='w3-center w3-padding-32'>
+      <span class="w3-xlarge w3-center w3-bottombar w3-border-dark-grey w3-padding-16">Teaching</span>
+    </div>
+    <h6>
+    <p class="pmargin">
+    Fall 2018, WUSTL CSE 571S: Network Security <br> 
+    Fall 2017, VT CS/ECE 5584: Network Security <br>
+    </p>
+    </h6>
+  </div>
+
+
+  <div class="" id="publication">
+    <br><br>
+    <div class ='w3-center w3-padding-32'>
+      <span class="w3-xlarge w3-center w3-bottombar w3-border-dark-grey w3-padding-16">Publication</span>
+    </div>
+
+
+
+    <h4> <p class="pmargin"> System Security </p></h4>
+    <h6>
+    <p class="pmargin"> 
+      <!-- <span class="w3-large w3-bottombar w3-border-dark-grey w3-padding-16">System Security</span> -->
+
+      Forensic Challenges under Misused Architectural Features  
+      <br>N. Zhang, R. Zhang, K. Sun, W. Lou, Y.T. Hou, Sushil Jajodia
+      <br>IEEE Transactions on Information Forensics and Security (TIFS) 2018
+
+      <br><br>
+      TruSense: Information Leakage from TrustZone  <br>
+      N. Zhang, K. Sun, Deborah Shands, W. Lou, Y.T. Hou<br>
+      37th IEEE International Conference on Computer Communications (INFOCOM), 2018<br>
+    
+      <br>CaSE: Cache-Assisted Secure Execution on ARM Processors 
+      <br>N. Zhang, K. Sun, W. Lou, Y.T. Hou
+      <br>37th IEEE Symposium on Security and Privacy (Oakland), 2016
+      ​​
+      <br>
+      <br>CacheKit: Evading Memory Introspection Using Cache Incoherence 
+      <br>N. Zhang, He Sun, K. Sun, W. Lou, Y.T. Hou
+      <br>1st IEEE European Symposium on Security and Privacy (EuroS&P), 2016
+
+      <br>
+      <br>Now You See Me: Hide and Seek in Physical Address Space 
+      <br>N. Zhang, K. Sun, W. Lou, Y.T. Hou, Sushil Jajodia
+      <br>10th ACM Symposium on Information, Computer and Communications Security (ASIACCS), 2015
+      ​
+      <br>
+      <br>Enabling Trusted Data-Intensive Execution in Cloud Computing 
+      <br>N. Zhang, W. Lou, X. Jiang, Y.T. Hou
+      <br>2nd IEEE Conference on Communications and Network Security (CNS), 2014
+
+      <br>
+      <br>MUSHI: Toward Multiple Level Security Cloud with Strong Hardware Level Isolation 
+      <br>N. Zhang, M. Li, W. Lou, Y.T. Hou
+      <br>IEEE Military Communications Conference (MILCOM), 2012
+     
+      </p>
+      </h6>
+
+
+    <h4>     <p class="pmargin">  Network Security </p> </h4>
+    
+    <h6>  
+        <p class="pmargin"> 
+      
+    Secure Remote Monitoring Framework Supporting Efficient Fine-grained Access Control and Data Processing in IoT <br>
+    Y. Chen, W. Sun, N. Zhang, Q. Zheng, W. Lou and Y.T. Hou <br>
+    14th International Conference on Security and Privacy in Communication Networks (SECURECOMM 2018) <br>
+    <br>
+
+    ROSTER: Radio Context Attestation in Cognitive Radio Network <br>
+    N. Zhang, W. Sun, W. Lou, Y.T. Hou, and W. Trappe<br> 
+    IEEE Conference on Communications and Network Security (IEEE CNS 2018)<br>
+    <br>
+
+    Efficient Signature Generation for Classifying Cross-Architecture IoT Malware <br>
+    M. Alhanahnah, Q. Lin, Q. Yan, N. Zhang, and Z. Chen <br>
+    IEEE Conference on Communications and Network Security (IEEE CNS) 2018 <br>
+    <br>
+
+    Tapping the Potential: Secure Chunk-based Deduplication of Encrypted Data for Cloud Backup<br>
+    W. Sun, N. Zhang, W. Lou, and Y.T. Hou<br>
+    IEEE Conference on Communications and Network Security (IEEE CNS 2018)<br>
+    <br>
+
+    Black Penguin: On the Feasibility of Detecting Intrusion with Homogeneous Memory <br>
+    N. Zhang, R. Zhang, Q. Yan, W. Lou, Y.T. Hou, Danfeng Yao,  <br>
+    Network Forensic Workshop, IEEE Conference on Communications and Network Security (CNS), 2017<br>
+    <br>
+
+    When Gene Meets Cloud: Enabling Scalable and Efficient Range Query on Encrypted Genomic Data <br>
+    W. Sun, N. Zhang, W. Lou, Y.T. Hou<br>
+    The 36th IEEE International Conference on Computer Communications (INFOCOM), 2017<br>
+    <br>
+    From Electromyogram to Password: Exploring the Privacy Impact of Wearables in Augmented Reality <br>
+    R. Zhang, N. Zhang, Changlai Du, W. Lou, Y.T. Hou, Yuichi Kawamoto<br>
+    ACM Transactions on Intelligent Systems and Technology (TIST), 2017<br>
+    <br>
+    AugAuth: Shoulder-Surfing Resistant Authentication for Augmented Reality​ <br>
+    R. Zhang, N. Zhang, Changlai Du, W. Lou, Y.T. Hou, Yuichi Kawamoto<br>
+    IEEE International Conference on Communications (ICC), 2017<br>
+    <br>
+    Looks Good to Me: Authentication for Augmented Reality <br>
+    Ethan Gaebel, N. Zhang, W. Lou, Y.T. Hou<br>
+    6th International Workshop on Trustworthy Embedded Devices, 23rd ACM Conference on Computer and Communications Security (TRUSTED CCS), 2016<br>
+    <br>
+    ​Distributed Data Mining with Differential Privacy <br>
+    N. Zhang, M. Li, W. Lou<br>
+    IEEE International Conference on Communications (ICC), 2011
+
+
+    </p>
+    </h6>
+  </div>
+
+
+
+    <div class="" id="service">
+    <br><br>
+    <div class ='w3-center w3-padding-32'>
+      <span class="w3-xlarge w3-center w3-bottombar w3-border-dark-grey w3-padding-16">Service</span>
+    </div>
+
+    
+    <!-- <h4>​Panelist</h4>
+    NSF Panelist 2017
+     -->
+    <h4> <p class="pmargin"> Technical Program Committee </p> </h4>
+    <h6> <p class="pmargin"> 
+    IEEE International Conference on Communication (ICC): 2018<br>
+    IEEE International Conference on Computer Communications (INFOCOM): 2019
+    </p> </h6>
+    
+    <!-- <h4>Conference and Journal External Review</h4>
+    <h6>
+    ACM Conference on Computer and Communications Security (CCS): 2015, 2016, 2017<br>
+    IEEE Communications and Network Security (CNS): 2015, 2016<br>
+    IEEE International Conference on Computer Communications (INFOCOM): 2012, 2013, 2014, 2015, 2017<br>
+    IEEE International Conference on Dependable Systems and Networks (DSN): 2017<br>
+    European Symposium on Research in Computer Security (ESORICS): 2013<br>
+    International Conference on Security and Privacy in Communication Networks (Securecomm): 2013<br>
+    IEEE Computer Society Mobile Security Technology (MOST): 2013<br>
+    ACM Transactions on Reconfigurable Technology and Systems (TRETS)<br>
+    KSII Transactions on Internet and Information Systems<br>
+    </h6>
+ -->
+
+
+    </div>
+
+
+
+
+<!--   <form class="w3-container" action="/action_page.php" target="_blank">
+    <div class="w3-section">
+      <label>Name</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+    </div>
+    <div class="w3-section">
+      <label>Email</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+    </div>
+    <div class="w3-section">
+      <label>Subject</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+    </div>
+    <div class="w3-section">
+      <label>Message</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+    </div>
+    <button type="submit" class="w3-button w3-block w3-black">Send</button>
+  </form> -->
+
+</div>
+<!-- end of content -->
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <!-- <h4>Footer</h4> -->
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+
+
+
+</body>
+</html>
