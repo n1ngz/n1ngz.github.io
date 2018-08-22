@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<title>CSE 571S: Network Security, Fall 2018</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #990000;
+    color: white;
+}
+
+.tabstyle { display: inline-block; width: 150px; }
+</style>
+
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:200px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Network<br>Security</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#top"        onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Organization</a> 
+    <a href="#Schedule"        onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Schedule</a> 
+    <a href="#Labs"        onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Labs</a>
+    <a href="#Projects"        onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a>
+    <a href="#Ethics"          onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ethics</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Network Security</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="top">
+    <h1 class="w3-xlarge"><b>CSE 571S: Network Security, Fall 2018</b></h1>
+    <h2 class="w3-large">
+    <p>
+      <b>
+      <span class="tabstyle">Instructor:   </span>   <span class="c"><a href="http://ningzhang.info" target="_blank" class="w3-hover-opacity">Ning Zhang</a>, zhang.ning@wustl.edu </span> <br>
+      <span class="tabstyle">Meeting: TuThu    </span>   <span class="c"> 10:00 pm - 11:30 pm</span>   <br>
+      <span class="tabstyle">Classroom:        </span>   <span class="c"> BME T2</span> <br>
+      <!-- <span class="tabstyle">Slack:        </span>   <span class="c">networksecurityvt.slack.com</span> -->
+      </b>
+    </p>
+
+    </h2>
+  </div>
+
+  <div class="w3-container" id="CourseDescription" style="margin-top:75px">
+  	<h1 class="w3-xxlarge w3-text-gray"><b>Course Description</b></h1>
+    <hr style="width:50px;border:5px solid #990000" class="w3-round">
+  	<p>
+  	This course covers principles and techniques in securing computer networks. Real world examples will be used to illustrate the rationales behind various security designs. There are three main components in the course, preliminary cryptography, network protocol security and network application security. Topics include IPSec, SSL/TLS, HTTPS, network fingerprinting, network malware, anonymous communication, and blockchain. The class project allows students to take a deep dive into a topic of choice in network security.	
+  	</p>
+  </div>
+
+  <div class="w3-container" id="textbook" style="margin-top:75px">
+  	<h1 class="w3-xxlarge w3-text-gray"><b>Textbook</b></h1>
+    <hr style="width:50px;border:5px solid #990000" class="w3-round">
+  	<p>
+There is no textbook for the class. We will use research papers for some of the topics. However, the following reference can be helpful. 
+<ul>
+	<li> Charlie Kaufman, Radia Perlman, and Mike Speciner, <i>Network Security: Private Communication in a Public World (2nd Edition)</i>, May 2, 2012 </li>
+	<br>
+	<li> Wenliang Du, <i>Computer Security: A Hands-on Approach</i> </li>
+	<br>
+	<li>  Arvind Narayanan , Joseph Bonneau , Edward Felten , Andrew Miller , Steven Goldfeder, <i>Bitcoin and Cryptocurrency Technologies</i> </li>
+
+</ul>
+
+
+  	</p>
+  </div>
+
+
+  <div class="w3-container" id="Assignment/Grading" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-gray"><b>Grading</b></h1>
+    <hr style="width:50px;border:5px solid #990000" class="w3-round">
+    <!-- <a href="CS.ECE.5584_Syllabus.pdf" target="_blank" class="w3-hover-opacity">Syllabus in PDF</a> -->
+    <!-- <h1 class="w3-xxlarge w3-text-gray"><b>Syllabus.</b></h1> -->
+    <p>
+    There is no exam in this class, evaluation will be based on class participation, lab reports and final projects. 
+	</p>
+
+    <table>
+    	<tr> <td> Labs </td>                <td> 55% (14 + 14 + 14 + 13) </td> </tr>
+    	<tr> <td> Projects</td>             <td> 40%</td>                      </tr>
+    	<tr> <td> Class Participation </td> <td> 5% </td>                      </tr>
+    </table>
+  </div>
+  
+
+  <div class="w3-container" id="Schedule" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-gray"><b>Schedule</b></h1>
+    <hr style="width:50px;border:5px solid #990000" class="w3-round">
+    <table>
+	<tr>  <td>Date</td>     <td>Topics</td>    <td>Assignment</td></tr>
+	<tr><td>8/28/2018</td><td>Course Overview, Security Fundamentals </td><td></td>
+</tr><tr><td>8/30/2018</td><td>Network Attacks - Packet/IP/TCP</td><td>TCP/IP Attack Lab (2 week) </td>
+</tr><tr><td>9/4/2018</td><td>Network Attacks - DoS</td><td></td>
+
+</tr><tr><td>9/6/2018</td><td>Stream Cipher</td><td></td>
+</tr><tr><td>9/11/2018</td><td>Block Cipher</td><td></td>
+
+</tr><tr><td>9/13/2018</td><td>Block Cipher, Modes of Operations</td><td>Blockcipher lab ( 1 weeks)</td>
+</tr><tr><td>9/18/2018</td><td>Key Exchange, DH</td><td></td>
+</tr><tr><td>9/20/2018</td><td>Assymmetric Crypto</td><td></td>
+</tr><tr><td>9/25/2018</td><td>Hash Functions, MAC</td><td>MD5 - Collision Lab (1 week) </td>
+
+</tr><tr><td>9/27/2018</td><td>Authentication</td><td></td>
+</tr><tr><td>10/2/2018</td><td>IPSec</td><td></td>
+</tr><tr><td>10/4/2018</td><td>TLS</td><td></td>
+
+</tr><tr><td>10/9/2018</td><td>PKI, CA</td><td>PKI Lab (1 week) </td>
+
+</tr><tr><td>10/11/2018</td><td>HTTPS</td><td></td>
+</tr><tr><td>10/16/2018</td><td>Fall Break - No class</td><td></td>
+
+</tr><tr><td>10/18/2018</td><td>Firewall / Intrusion Detection</td>        <td>Term Project Topic Selection </td>
+ </tr><tr><td>10/23/2018</td><td>DNS, DNSSec</td> <td></td>
+
+</tr><tr><td>10/25/2018</td><td>DoS, Botnet</td><td></td>
+</tr><tr><td>10/30/2018</td><td>Netwrok Malware / Project lightning talk</td>  <td>Term Project Status Report </td>
+</tr><tr><td>11/1/2018</td>
+	<td>Blockchain <br>
+		Reading: <a href=http://www.bitcoin.org/bitcoin.pdf> bitcoin </a>
+	</td>
+<td></td>
+</tr><tr><td>11/6/2018</td><td>Blockchain Attack and Defense</td><td></td>
+</tr><tr><td>11/8/2018</td><td>Limitation of Blockchain </td><td></td>
+</tr><tr><td>11/13/2018</td><td>Smart Contract</td><td></td>
+</tr><tr><td>11/15/2018</td><td>Smart Contract Attack and Defense</td><td></td>
+</tr><tr><td>11/20/2018</td><td>Limitation of Smart Contract </td>             <td>Term Project Status Report </td>
+</tr><tr><td>11/22/2018</td><td>Thanksgiving Break - No class</td><td></td>
+</tr><tr><td>11/27/2018</td><td>Edge Security </td><td></td>
+</tr><tr><td>11/29/2018</td><td>IoT Security </td><td></td>
+</tr><tr><td>12/4/2018</td><td>IoT Security / Final Project Presentation</td><td></td>
+</tr><tr><td>12/6/2018</td><td>Final Project Presentation </td><td></td>
+</tr><tr><td>12/19/2018</td><td> N/A </td><td>Project Report Due</td>  
+</tr>
+
+
+ </table>
+
+  </div>
+
+
+
+
+
+  <div class="w3-container" id="Labs" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-gray"><b>Labs</b></h1>
+    <hr style="width:50px;border:5px solid #990000" class="w3-round">
+    
+    <ul>
+      <li> Lab1 - focus on replay attack, TCP/IP session hijacking, and more </li>
+      <li> Lab2 - focus on experiencing frequency attack and cipher mode </li>
+      <li> Lab3 - focus on expoloring hash function collision </li>
+      <li> Lab4 - focus on deploying PKI and how it stops man-in-the-middle attack
+    </ul>
+    
+  </div>
+
+
+
+
+
+
+  <div class="w3-container" id="Projects" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-gray"><b>Projects</b></h1>
+    <hr style="width:50px;border:5px solid #990000" class="w3-round">
+
+The class project can be original research or survey on an existing topic in network security. Class project report should follow the IEEE conference template. The length of survey should sufficient to provide insight into a topic (It often requires more than 6 pages). The class project can also be improvement on an existing security tool. The development should be source controlled using tools, such as git. Students are expected to spend at least six to eight hours on the class labs and projects every week. Some of the ideas for projects are listed below
+
+    <!-- <h2 class="w3-large w3-text-black"><b>[ Project Ideas ]</b></h2> -->
+    
+    <ul>
+      <li> Build an IoT device locator in the Internet using tools from 
+      <a href="https://github.com/zmap/" target="_blank" class="w3-hover-opacity">Zmap</a> 
+      project</li>
+
+      <li> Automatic vulnerability discovery using protocol specification </li>
+      <li> Automatic context recovery of network services in operating system </li>
+      <li> Adversarial learning on network systems </li>
+      <li> Security Measurement on services on the Internet </li>
+      <li> Build a covert channel over the network using various services </li>
+      <li> Building physical communication covert channel by misuing IoT devices </li>
+      <li> Automatic context recovery of network services in operating system </li>
+      <li> Build specialized finger printing mechanisms to for a type of device </li>
+      <li> Analyze security of a real world product, it can be cyber-physical systems like car or IoT devices like smart coffee machine. </li>
+      <li> <b> YOUR IDEA </b> </li>
+    </ul>
+    
+<!--     <h2 class="w3-xlarge w3-text-black"><b>[ Project Teams ]</b></h2>
+      <table>
+      <tr>
+      <th> Teams </th> <th> Project Name </th> 
+      </tr>
+      <tr> <td> Joel       </td> <td> Antivirus Software Survey </td> </tr>
+      <tr> <td> Jonathan   </td> <td> IoT Protection using SDN  </td> </tr>
+      <tr> <td> Ya         </td> <td> Program Analysis of vulnerabilities in cryptographic implementation </td>  </tr>
+      <tr> <td> Yang       </td> <td> Black-box attack against state-of-the-art classification systems and potential countermeasures</td>  </tr>
+      <tr> <td> Mischa </td> <td> Defensive applications of Machine Learning in network security </td> </tr>
+      <tr> <td> Kate </td> <td> building an automated way to detect Bluetooth vulnerabilities within devices  </td> </tr>
+      <tr> <td> Kaidi </td> <td> Context Recovery of Network Services in Operating System </td> </tr>
+      <tr> <td> Ruide </td> <td> Large-scale automatic bug finding and exploitation generation for IoT devices </td> </tr>
+      <tr> <td> Taoran <br> WeiSheng </td> <td> Early Cyber Attack Detection Using Social Media </td> </tr>
+      <tr> <td> Xuchao <br> Lei </td>       <td> Robust Regression via Online Feature Selection </td> </tr> 
+      <tr>
+      </table>
+ -->
+    
+  </div>
+
+
+
+  
+
+
+</p>
+
+
+
+  <div class="w3-container" id="Ethics" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-gray"><b>Ethics</b></h1>
+    <hr style="width:50px;border:5px solid #990000" class="w3-round">
+    <p> With greater power, comes greater responsibility. In this course, we will be learning about and exploring some vulnerabilities that could be used to attack systems. Students are expected to behave responsibly and ethically. You may not attack any system prior approval of the site owners, and may not use anything you learn in this class to disrupt services or harm others. If you have any doubts about whether or not something you want to do is ethical and legal, you should check with the course instructor.</p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+<p class="w3-right"> CSE 571s: Network Security, Fall 2018, <a href="http://ningzhang.info" target="_blank" class="w3-hover-opacity">Ning Zhang</a>
+</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+
